@@ -1,0 +1,134 @@
+Ejercicio 1
+Hacer el rastreo manual para:
+a = 2
+a = a + 1
+b = a * 2
+b = b - 1
+c = a + 2 * b
+Presentar "c".
+
+Ejercicio 2
+Hacer el algoritmo para escribir un programa que evalúe la expresión
+Solución: observe que los valores de ingreso serán para las variables x, w.
+Algoritmo
+Inicio
+Declare Resultado, x, w
+Leer x,w
+Resultado (x+w)/(2*w)
+Mostrar Resultado
+Fin
+Variables
+resultado: valor de la expresión luego de ser evaluada.
+x : guarda un valor numérico ingresado.
+w : guarda un valor numérico ingresado.
+
+Ejercicio 3
+Hacer el algoritmo para escribir un programa que evalúe la expresión
+raizcuadrada(3*x^x+4*y^y)
+Algoritmo
+Inicio
+Declare x, y, Resultado
+Leer x,y
+Resultado raizcuadrada(3*x^x+4*y^y)
+Mostrar resultado
+Fin
+Variables
+x : guarda un valor numérico ingresado.
+y : guarda un valor numérico ingresado.
+resultado : guarda el valor resultado de la expresión.
+
+Ejercicio 4
+Realizar un programa que calcule el i.v.a total de la compra, y subtotal.
+Valores a ingresar monto total de la compra.
+i.v.a = 16% del monto total de la compra
+imprimir subtotal y monto del iva y monto total.
+
+Ejercicio 5
+Hacer el algoritmo para escribir un programa que indique si un número ingresado
+por el teclado es positivo.
+
+Ejercicio 6
+Hacer un programa que calcule el pago que hacen un grupo de
+personas para ver una película teniendo en cuenta que si el grupo es menor de 8
+personas el pago es de 1.5 soles por persona y para grupos de 8 personas o mas el
+pago es 0.5 soles por persona.
+
+Ejercicio 7
+Hacer un programa que convierta un número mayor de 10000,
+dado en segundos a horas minutos y segundos. Ejemplo 12015 segundos es
+equivalente a 3 horas, 20 minutos, 15 segundos
+
+Ejercicio 8
+En el Instituto Superior Pedagógico Toribio Rodríguez de Mendoza, los pagos por
+curso desaprobado son de 20 soles, con un cargo máximo de 120 soles
+independiente del número de cursos tomados. Ejemplo si un alumno desaprueba 3
+cursos pagaría 60 soles, mientras que uno que desaprueba 8 cursos paga 120 soles.
+Escriba un programa en el que las entradas sean el número de
+cursos desaprobados y la salida sea el valor del pago total que el alumno haga por
+los cursos desaprobados.
+
+Ejercicio 9
+De los estudiantes que se matriculan en la UNAT-A, los ex soldados pagan 30 soles
+por curso en el que se matriculen, mientras que los demás (regulares), pagan 50
+soles por curso. Diseñe un programa en el que el usuario
+introduce los datos del estudiante (ex soldado o regular) y el número de cursos y las
+salidas sean la categoría del estudiante (ex soldado o regular), número de cursos y
+los costos totales por los cursos a llevar.
+
+Ejercicio 10
+En la ciudad de Chachapoyas, una agencia de seguros para automóviles asigna
+costos basados en el sexo y la edad del conductor. Los varones menores de 25 años
+pagan los precios más altos, 1000 soles. Los hombres de 25 años o más años pagan
+700 soles. Las mujeres de menos de 21 años pagan 800 soles, mientras que las
+mujeres de 21 años o más pagan 500 soles. Escribir un programa que
+imprima la edad del conductor, sexo, y el pago correspondiente para los clientes de
+la aseguradora.
+
+Ejercicio 11
+Escribir el algoritmo para un programa que solicita se le ingrese un número. Si el
+número es positivo debe escribirse el número y junto a el positivo (15 POSITIVO). Si
+el número es cero (0 CERO); Si es negativo debe escribirse el número y junto a el
+negativo (-5 NEGATIVO).
+
+Ejercicio 12
+En una tienda donde se venden sillas, si se compran más de 8 el costo por cada una
+es de 10 soles; entre 4 y 8 es de 11 soles cada una, si la compra es menor de 4 el
+costo es de 15 soles cada una. Escriba un programa para
+saber cuanto pagará un cliente según el número de sillas que compra. Debe
+imprimirse el número de sillas que compra y el total a pagar.
+
+Ejercicio 13
+Usando la instrucción mientras hacer un algoritmo para un programa que imprima la serie
+1,3,5,7,9,11... Numeros Impares
+
+Ejercicio 14
+Hacer un programa que calcule la suma de ciertos números
+ingresados por el teclado. El cálculo de la suma se hará en cualquier momento.
+
+Ejercicio 15
+Hacer un programa que calcule el cubo de un número ingresado.
+
+Ejercicio 16
+Hacer un programa que calcule el factorial de un número n
+
+Ejercicio 17
+Hacer un programa que calcule la serie fibonacci.
+1,1,2,3,5,8,13
+
+Ejercicio 18
+Realizar un programa que solución a la Problemática.
+Un granjero ha comprado una pareja de conejos para criarlos y luego venderlos.
+Si la pareja de conejos produce una nueva pareja cada mes y la nueva pareja
+tarda un mes más en ser también productiva, ¿cuántos pares de conejos podrá
+poner a la venta el granjero al cabo de un año?
+
+Ejercicio 19
+Realizar un programa que solución a la Problemática.
+Diseñe e implemente un programa que juegue al juego de cifras de “Cifras y Letras”.
+El juego consiste en obtener, a partir de 6 números, un número lo más cercano posible a
+un número de tres cifras realizando operaciones aritméticas con los 6 números.
+
+Ejercicio 20
+Realizar un programa para identificar de una lista de palabras si es palindrome o no.
+
+//Ing. Edson Fernando Ventura Oropeza
