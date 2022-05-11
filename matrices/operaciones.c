@@ -2,7 +2,7 @@
 
 int main()
 {
-    int size_matriz, i, j, contador, opcion;
+    int size_matriz = 0, i, j, contador, opcion;
     float matrizA[10][10];
     float matrizB[10][10];
     float matrizC[10][10];
@@ -43,87 +43,127 @@ int main()
             }
             break;
         case 2:
-            // Suma
-            for (i = 1; i <= size_matriz; i++)
+            if (size_matriz > 0)
             {
-                for (j = 1; j <= size_matriz; j++)
+                // Suma
+                for (i = 1; i <= size_matriz; i++)
                 {
-                    matrizC[i][j] = matrizA[i][j] + matrizB[i][j];
+                    for (j = 1; j <= size_matriz; j++)
+                    {
+                        matrizC[i][j] = matrizA[i][j] + matrizB[i][j];
+                    }
                 }
+                // Imprimir Respuesta
+                printf("--------------------\n");
+                printf("RESULTADO DE LA SUMA: \n");
+                for (i = 1; i <= size_matriz; i++)
+                {
+                    for (j = 1; j <= size_matriz; j++)
+                    {
+                        printf("C [%d][%d]: [%f]\n", i, j, matrizC[i][j]);
+                    }
+                }
+                printf("--------------------\n");
             }
-            // Imprimir Respuesta
-            printf("--------------------\n");
-            printf("RESULTADO DE LA SUMA: \n");
-            for (i = 1; i <= size_matriz; i++)
+            else
             {
-                for (j = 1; j <= size_matriz; j++)
-                {
-                    printf("C [%d][%d]: [%f]\n", i, j, matrizC[i][j]);
-                }
-            }
-            printf("--------------------\n");
-            break;
-        case 3:
-            // Resta
-            for (i = 1; i <= size_matriz; i++)
-            {
-                for (j = 1; j <= size_matriz; j++)
-                {
-                    matrizC[i][j] = matrizA[i][j] - matrizB[i][j];
-                }
-            }
-            // Imprimir Respuesta
-            printf("--------------------\n");
-            printf("RESULTADO LA RESTA: \n");
-            for (i = 1; i <= size_matriz; i++)
-            {
-                for (j = 1; j <= size_matriz; j++)
-                {
-                    printf("C [%d][%d]: [%f]\n", i, j, matrizC[i][j]);
-                }
-            }
-            printf("--------------------\n");
-            break;
-        case 4:
-            // Multiplicar
-            for (i = 1; i <= size_matriz; i++)
-            {
-                for (j = 1; j <= size_matriz; j++)
-                {
-                    matrizC[i][j] = matrizA[i][j] * matrizB[i][j];
-                }
-            }
-            // Imprimir Respuesta
-            printf("--------------------\n");
-            printf("RESULTADO LA MULTIPLICACION: \n");
-            for (i = 1; i <= size_matriz; i++)
-            {
-                for (j = 1; j <= size_matriz; j++)
-                {
-                    printf("C [%d][%d]: [%f]\n", i, j, matrizC[i][j]);
-                }
-            }
-            printf("--------------------\n");
-            break;
-        case 5:
-            printf("MATRICES INGRESADAS: \n");
-            // Imprimir A
-            for (i = 1; i <= size_matriz; i++)
-            {
-                for (j = 1; j <= size_matriz; j++)
-                {
-                    printf("A [%d][%d]: [%f]\n", i, j, matrizA[i][j]);
-                }
+                printf("xxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+                printf("No hay matrices ingresadas\n");
+                printf("xxxxxxxxxxxxxxxxxxxxxxxxxx\n");
             }
 
-            // Imprimir B
-            for (i = 1; i <= size_matriz; i++)
+            break;
+        case 3:
+            if (size_matriz > 0)
             {
-                for (j = 1; j <= size_matriz; j++)
+                // Resta
+                for (i = 1; i <= size_matriz; i++)
                 {
-                    printf("B [%d][%d]: [%f]\n", i, j, matrizA[i][j]);
+                    for (j = 1; j <= size_matriz; j++)
+                    {
+                        matrizC[i][j] = matrizA[i][j] - matrizB[i][j];
+                    }
+                }
+                // Imprimir Respuesta
+                printf("--------------------\n");
+                printf("RESULTADO LA RESTA: \n");
+                for (i = 1; i <= size_matriz; i++)
+                {
+                    for (j = 1; j <= size_matriz; j++)
+                    {
+                        printf("C [%d][%d]: [%f]\n", i, j, matrizC[i][j]);
+                    }
+                }
+                printf("--------------------\n");
+            }
+            else
+            {
+                printf("xxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+                printf("No hay matrices ingresadas\n");
+                printf("xxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+            }
+
+            break;
+        case 4:
+            if (size_matriz > 0)
+            {
+                // Multiplicar
+                for (i = 1; i <= size_matriz; i++)
+                {
+                    for (j = 1; j <= size_matriz; j++)
+                    {
+                        matrizC[i][j] = matrizA[i][j] * matrizB[i][j];
+                    }
+                }
+                // Imprimir Respuesta
+                printf("--------------------\n");
+                printf("RESULTADO LA MULTIPLICACION: \n");
+                for (i = 1; i <= size_matriz; i++)
+                {
+                    for (j = 1; j <= size_matriz; j++)
+                    {
+                        printf("C [%d][%d]: [%f]\n", i, j, matrizC[i][j]);
+                    }
+                }
+                printf("--------------------\n");
+            }
+            else
+            {
+                printf("xxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+                printf("No hay matrices ingresadas\n");
+                printf("xxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+            }
+
+            break;
+        case 5:
+            if (size_matriz > 0)
+            {
+                printf("MATRICES INGRESADAS: \n");
+                // Imprimir A
+                for (i = 1; i <= size_matriz; i++)
+                {
+                    for (j = 1; j <= size_matriz; j++)
+                    {
+                        printf("A [%d][%d]: [%f]\n", i, j, matrizA[i][j]);
+                    }
+                }
+
+                // Imprimir B
+                for (i = 1; i <= size_matriz; i++)
+                {
+                    for (j = 1; j <= size_matriz; j++)
+                    {
+                        printf("B [%d][%d]: [%f]\n", i, j, matrizA[i][j]);
+                    }
                 }
             }
+            else
+            {
+                printf("xxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+                printf("No hay matrices ingresadas\n");
+                printf("xxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+            }
+
             break;
         default:
             break;
