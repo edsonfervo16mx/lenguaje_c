@@ -153,7 +153,7 @@ int main()
                 {
                     for (j = 1; j <= size_matriz; j++)
                     {
-                        printf("B [%d][%d]: [%f]\n", i, j, matrizA[i][j]);
+                        printf("B [%d][%d]: [%f]\n", i, j, matrizB[i][j]);
                     }
                 }
             }
